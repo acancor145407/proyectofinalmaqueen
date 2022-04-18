@@ -46,15 +46,13 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
     if (receivedNumber == 5) {
         maqueen.motorStop(maqueen.Motors.M2)
-        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 25)
         basic.pause(100)
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 0)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 25)
     }
     if (receivedNumber == 6) {
         maqueen.motorStop(maqueen.Motors.M1)
-        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
         basic.pause(100)
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 0)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
     }
 })
 radio.setGroup(14)
